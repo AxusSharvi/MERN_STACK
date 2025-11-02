@@ -1,9 +1,12 @@
-import Books from "./components/Books";
+import SideNav from "./components/dashboardComponents/SideNav";
+// import Header from "./components/dashboardComponents/Header";
+// import Body from "./components/dashboardComponents/Body";
+// import AuthorPage from "./components/dashboardComponents/AuthorPage";
 
 function App() {
   return (
-    <div className="text-yellow-600 text-2xl font-bold">
-      <Books />
+    <div className="min-h-screen min-w-full flex bg-white">
+      <SideNav />
     </div>
   );
 }

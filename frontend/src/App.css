@@ -1,0 +1,54 @@
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* --- Component Styles for SideNav --- */
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between items */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center; /* Vertical centering */
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #6B7280; /* Default text color (Tailwind's gray-500) */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Your hover style */
+.nav-item:hover {
+  color: #ffff;
+  background-color: #FE5D26;
+}
+
+/* Your icon styles */
+.icon-size {
+  height: 18px;
+  width: 18px;
+  /* Color is inherited from .nav-item.
+     We set the default light gray there.
+  */
+}
+
+/* Make icons white on hover (to match text) */
+.nav-item:hover .icon-size {
+  color: #ffff;
+}
+
