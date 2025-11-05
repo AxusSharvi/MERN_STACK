@@ -1,13 +1,20 @@
-import SideNav from "./components/dashboardComponents/SideNav";
-// import Header from "./components/dashboardComponents/Header";
-// import Body from "./components/dashboardComponents/Body";
-// import AuthorPage from "./components/dashboardComponents/AuthorPage";
+import { Routes, Route } from 'react-router-dom';
+import MainPage from './pages/MainPage';
+import LibraryPage from './pages/LibraryPage'
+import FavoritePage from './pages/FavoritePage'
 
 function App() {
   return (
-    <div className="min-h-screen min-w-full flex bg-white">
-      <SideNav />
-    </div>
+    <Routes>
+
+      <Route path="/" element={<MainPage />}>
+        
+        <Route path="library" element={<LibraryPage />} />
+        <Route path="favorite" element={<FavoritePage />} />
+
+      </Route>
+      
+    </Routes>
   );
 }
 
